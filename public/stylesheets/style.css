@@ -1,0 +1,118 @@
+html {
+  font-size: 20px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
+  font-family: #E7E303;
+  height: 100%;
+  }
+
+h1 {
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  color: #000000;
+}
+
+p, li {
+  font-size: 20px;
+  /*line-height: 2;*/
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+  margin: 0 20px;
+  
+}
+
+.row {
+  max-width: 100%;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  background-color:#36c8f5;
+}
+
+.body {
+  min-height: 90%;
+}
+
+header {
+  background-color: #0ea1cf;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+header .row
+{
+  display: flex;
+}
+
+
+header .row .col-2 {
+  text-align: center;
+  flex-grow: 1;
+
+
+} 
+header .row .col-3 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+footer {
+  margin-top: 30px;
+  background-color: #0ea1cf;
+  }
+
+  .column {
+    margin-left: 50px;
+    max-width: 500px;
+  }
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+
+  }
+
+a {
+  color: rgba(0, 0, 0, 0.822);
+}
+
+.sidebar-nav {
+  position: relative;
+  top: 40%;
+  left: 0px;
+  border-top-right-radius: 5% ;
+  border-bottom-right-radius: 5% ;
+  background-color: rgba(167, 11, 24, 0.95) ;
+
+}
+
+.sidebar-nav {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+  background-color: #157a99;
+}
+
+
+
+/*
+html {
+  background-color: #36c8f5;
+}
+
+
+.sidebar-nav {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+  
+}
+
+button {
+  margin-bottom: 20px;
+}
+*/

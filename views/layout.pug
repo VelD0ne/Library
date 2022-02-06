@@ -1,0 +1,55 @@
+doctype html
+html(lang='en')
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div(class='body')
+      header
+        .row
+          .col-1 
+          .col-2 
+            h1 Библиотека
+          .col-3 
+            a(href='') 
+              h4 Профиль
+      div(class='row')
+        div(class='col-sm-2')
+          block sidebar
+            ul(class='sidebar-nav')
+              li
+                a(href='/catalog') Home
+              li
+                a(href='/catalog/books') All books
+              li
+                a(href='/catalog/authors') All authors
+              li
+                a(href='/catalog/genres') All genres
+              li
+                a(href='/catalog/bookinstances') All book-instances
+              li
+                hr
+              li
+                a(href='/catalog/author/create') Create new author
+              li
+                a(href='/catalog/genre/create') Create new genre
+              li
+                a(href='/catalog/book/create') Create new book
+              li
+                a(href='/catalog/bookinstance/create') Create new book instance (copy)
+  
+        div(class='col-sm-10')
+          block content
+    footer 
+      div(class='columns')
+        div(class='column')
+          a(href='http://cloud.mongodb.com/v2/6152e96b63086f463030828a#clusters') База данных
+        div(class='column')
+          a(href='http://vk.com/dernir') Владелец библиотеки
+        div(class='column')  
+          p Помогите мне
